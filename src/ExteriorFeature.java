@@ -1,5 +1,5 @@
 /**
- * ExteriorFeature class that implements the Feature interface
+ * ExteriorFeature class that implements the Feature interface.
  *
  * @author Michael Gough
  * @version 1
@@ -8,12 +8,12 @@
 public class ExteriorFeature implements Feature {
 
   /**
-   * Initialize the instance variable String exteriorFeature
+   * Initialize the instance variable String exteriorFeature.
    */
   private String exteriorFeature;
 
   /**
-   * Default constructor that sets the instance variable exteriorFeature to generic
+   * Default constructor that sets the instance variable exteriorFeature to generic.
    */
   public ExteriorFeature() {
     //Set the instance variable
@@ -21,9 +21,9 @@ public class ExteriorFeature implements Feature {
   }
 
   /**
-   * Overloaded constructor that sets the instance variable
+   * Overloaded constructor that sets the instance variable.
    *
-   * @param exteriorFeature
+   * @param exteriorFeature initializes the String value for exteriorFeature.
    */
   public ExteriorFeature(String exteriorFeature) {
     //Set instance variable
@@ -31,8 +31,9 @@ public class ExteriorFeature implements Feature {
   }
 
   /**
-   * Override method getFeature that gets the instance variable exteriorFeature
-   * @return
+   * Override method getFeature that gets the instance variable exteriorFeature.
+   *
+   * @return String value for the Feature.
    */
   @Override
   public String getFeature() {
@@ -40,8 +41,9 @@ public class ExteriorFeature implements Feature {
   }
 
   /**
-   * Override method setFeature that sets the instansce variable
-   * @param exteriorFeature
+   * Override method setFeature that sets the instance variable.
+   *
+   * @param exteriorFeature sets the Feature for the car.
    */
   @Override
   public void setFeature(String exteriorFeature) {
@@ -49,15 +51,16 @@ public class ExteriorFeature implements Feature {
   }
 
   /**
-   * toString that returns the instance variable to the console
-   * @return String value of the instance variable to the console
+   * toString that returns the instance variable to the console.
+   *
+   * @return String value of the instance variable to the console.
    */
   public String toString() {
     return "Exterior [" + this.exteriorFeature + "]";
   }
 
   /**
-   * Static main method that tests two scenarios
+   * Static main method that tests two scenarios.
    */
   public static void main(String[] args) {
     //Test the default constructor

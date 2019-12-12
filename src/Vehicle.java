@@ -1,7 +1,7 @@
 import java.util.Date;
 
 /**
- * Vehicle class that implements the Engine and Chassis interface
+ * Vehicle class that implements the Engine and Chassis interface.
  *
  * @author Michael Gough
  * @version 1
@@ -10,7 +10,7 @@ import java.util.Date;
 public class Vehicle implements Engine, Chassis {
 
   /**
-   * Initialize instance variables used in the the Vehicle class
+   * Initialize instance variables used in the the Vehicle class.
    */
   private Date vehicleManufacturedDate;
   private String vehicleManufacturer;
@@ -22,7 +22,7 @@ public class Vehicle implements Engine, Chassis {
   private Engine vehicleEngine;
 
   /**
-   * Default constructor used to set the instance variables
+   * Default constructor used to set the instance variables.
    */
   public Vehicle() {
     this.vehicleManufacturedDate = new Date();
@@ -38,18 +38,19 @@ public class Vehicle implements Engine, Chassis {
   }
 
   /**
-   * Overloaded constructor thats used to set the values of the instance variables
+   * Overloaded constructor that is used to set the values of the instance variables.
    *
-   * @param vehicleManufacturer
-   * @param vehicleManufacturedDate
-   * @param vehicleMake
-   * @param vehicleModel
-   * @param vehicleType
-   * @param vehicleFrame
-   * @param engine
+   * @param vehicleManufacturer accepts the vehicleManufacture
+   * @param vehicleManufacturedDate accepts the vehicle manufactured date
+   * @param vehicleMake accepts the vehicle make
+   * @param vehicleModel accepts the vehicle model
+   * @param vehicleType accepts the vehicle type
+   * @param vehicleFrame accepts the vehicle frame
+   * @param engine accepts the engine
    */
-  public Vehicle(Date vehicleManufacturedDate,String vehicleManufacturer,  String vehicleMake,
-      String vehicleModel, Chassis vehicleFrame, String vehicleType, String driveTrain, Engine engine) {
+  public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer, String vehicleMake,
+      String vehicleModel, Chassis vehicleFrame, String vehicleType, String driveTrain,
+      Engine engine) {
     this.vehicleManufacturer = vehicleManufacturer;
     this.vehicleManufacturedDate = vehicleManufacturedDate;
     this.vehicleMake = vehicleMake;
@@ -61,11 +62,10 @@ public class Vehicle implements Engine, Chassis {
   }
 
 
-
   /**
-   * public method implementation of setEngineCylinders from the Engine interface
+   * public method implementation of setEngineCylinders from the Engine interface.
    *
-   * @param engineCylinders
+   * @param engineCylinders sets the engine cylinders.
    */
   @Override
   public void setEngineCylinders(int engineCylinders) {
@@ -73,9 +73,9 @@ public class Vehicle implements Engine, Chassis {
   }
 
   /**
-   * setEngineManufacturedDate implementation for the method from the Engine interface
+   * setEngineManufacturedDate implementation for the method from the Engine interface.
    *
-   * @param date
+   * @param date sets the engine manufactured date.
    */
   @Override
   public void setEngineManufacturedDate(Date date) {
@@ -84,9 +84,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p>setEngineManufacturer method implementation for the method from the Engine interface that
-   * sets the manufacturer</p>
+   * sets the manufacturer. </p>
    *
-   * @param manufacturer
+   * @param manufacturer sets the engine manufacturer.
    */
   @Override
   public void setEngineManufacturer(String manufacturer) {
@@ -95,9 +95,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p>setEngineMake method implementation for the method from the Engine interface that
-   * sets the engineMake</p>
+   * sets the engineMake. </p>
    *
-   * @param engineMake
+   * @param engineMake sets the engine make
    */
   @Override
   public void setEngineMake(String engineMake) {
@@ -106,9 +106,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p>setEngineModel method implementation for the method from the Engine interface that
-   * sets the engineModel</p>
+   * sets the engineModel. </p>
    *
-   * @param engineModel
+   * @param engineModel sets the engine model.
    */
   @Override
   public void setEngineModel(String engineModel) {
@@ -117,9 +117,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p>setDriveTrain method implementation for the method from the Engine interface that
-   * sets the driveTrain</p>
+   * sets the driveTrain. </p>
    *
-   * @param driveTrain
+   * @param driveTrain sets the DriveTrain
    */
   public void setDriveTrain(String driveTrain) {
     this.vehicleEngine.setDriveTrain(driveTrain);
@@ -127,9 +127,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p>setEngineType method implementation for the method from the Engine interface that
-   * sets the engine type</p>
+   * sets the engine type. </p>
    *
-   * @param fuel
+   * @param fuel sets the Engine Type
    */
   @Override
   public void setEngineType(String fuel) {
@@ -139,9 +139,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p> getChassisType method implementation for the method from the Engine interface that
-   * gets the Chassis type</p>
+   * gets the Chassis type. </p>
    *
-   * @return
+   * @return Chassis
    */
   @Override
   public Chassis getChassisType() {
@@ -150,9 +150,9 @@ public class Vehicle implements Engine, Chassis {
 
   /**
    * <p>setChassisType method implementation for the method from the Engine interface that
-   * sets the Chassis type</p>
+   * sets the Chassis type.</p>
    *
-   * @param vehicleChassis
+   * @param vehicleChassis sets the vehicle chassis
    */
   @Override
   public void setChassisType(String vehicleChassis) {
@@ -160,9 +160,9 @@ public class Vehicle implements Engine, Chassis {
   }
 
   /**
-   * toString that prints to the console the values of the instance variables
+   * toString that prints to the console the values of the instance variables.
    *
-   * @return
+   * @return string to print to the console
    */
   public String toString() {
     return "Manufacture Name : " + this.vehicleManufacturer + "\n" + "Manufactured Date : "
@@ -172,22 +172,4 @@ public class Vehicle implements Engine, Chassis {
         + "\n" + vehicleEngine.toString();
   }
 
-//  /**
-//   * Static main method that test two scenarios
-//   *
-//   * @param args
-//   */
-//  public static void main(String[] args) {
-//    //Scenario one that test the default constructor
-//    Vehicle scenarioOne = new Vehicle();
-//    System.out.println(scenarioOne);
-//
-//    //Scenario two that test the overloaded constructor
-//    Vehicle scenarioTwo = new Vehicle("Honda", new Date(1325599999999L), "Honda", "Prelude",
-//        "Coupe",
-//        new VehicleChassis("Unibody"),
-//        new ManufacturedEngine("Honda", new Date(), "H-Series", "H23A1", "2WD: Two - Wheel Drive",
-//            4, "88 AKI"));
-//    System.out.println(scenarioTwo);
-//  }
 }

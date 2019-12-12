@@ -1,5 +1,5 @@
 /**
- * Interface Feature
+ * Interface Feature.
  *
  * @author Michael Gough
  * @version 1
@@ -8,15 +8,16 @@
 public interface Feature {
 
   /**
-   * Method for getFeatures
+   * Method for getFeatures.
    *
-   * @return String value with the feature
+   * @return String value with the feature.
    */
   public String getFeature();
 
   /**
-   * Method setFreature that sets the feature
-   * @param feature
+   * Method set Feature that sets the feature.
+   *
+   * @param feature sets the String feature.
    */
   public void setFeature(String feature);
 

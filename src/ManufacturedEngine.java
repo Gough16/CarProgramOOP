@@ -1,7 +1,7 @@
 import java.util.Date;
 
 /**
- * ManufacturedEngine class that implements the Engine interface
+ * ManufacturedEngine class that implements the Engine interface.
  *
  * @author Michael Gough
  * @version 1
@@ -10,7 +10,7 @@ import java.util.Date;
 public class ManufacturedEngine implements Engine {
 
   /**
-   * Declaring private instance variables
+   * Declaring private instance variables.
    */
   private String engineManufacturer;
   private Date engineManufacturedDate;
@@ -22,7 +22,7 @@ public class ManufacturedEngine implements Engine {
 
   /**
    * <p>ManufacturedEngine default constructor that initializes the instance variables with literal
-   * values </p>
+   * values. </p>
    */
   public ManufacturedEngine() {
     //Initialize instance variables
@@ -37,15 +37,15 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * Overloaded constructor that gets values assigned for each of the instance variables
+   * Overloaded constructor that gets values assigned for each of the instance variables.
    *
-   * @param engineManufacturer
-   * @param engineManufacturedDate
-   * @param engineMake
-   * @param engineModel
-   * @param driveTrain
-   * @param engineCylinders
-   * @param engineType
+   * @param engineManufacturer accepts the engineManufacturer
+   * @param engineManufacturedDate accepts the engineManufacturedDate
+   * @param engineMake accepts engine Make
+   * @param engineModel accepts engine model
+   * @param driveTrain accepts the drive train
+   * @param engineCylinders accepts the engine cylinders
+   * @param engineType accepts the engine type
    */
   public ManufacturedEngine(String engineManufacturer, Date engineManufacturedDate,
       String engineMake, String engineModel, String driveTrain, int engineCylinders,
@@ -61,9 +61,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * Method setEngine variable that gets overriden from the Engine interface
+   * Method setEngine variable that gets override from the Engine interface.
    *
-   * @param engineCylinders
+   * @param engineCylinders sets the engine cylinders
    */
   @Override
   public void setEngineCylinders(int engineCylinders) {
@@ -71,9 +71,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * setEngineManufacturedDate that gets overriden from the Engine interface
+   * setEngineManufacturedDate that gets override from the Engine interface.
    *
-   * @param date
+   * @param date sets the engine manufactured date.
    */
   @Override
   public void setEngineManufacturedDate(Date date) {
@@ -81,9 +81,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * setEngineManufacturer that gets overriden from the Engine interface
+   * setEngineManufacturer that gets override from the Engine interface.
    *
-   * @param manufacturer
+   * @param manufacturer sets the engine manufacturer.
    */
   @Override
   public void setEngineManufacturer(String manufacturer) {
@@ -91,9 +91,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * setEngineMake that gets overriden from the Engine interface
+   * setEngineMake that gets override from the Engine interface.
    *
-   * @param engineMake
+   * @param engineMake sets the engine make string
    */
   @Override
   public void setEngineMake(String engineMake) {
@@ -101,9 +101,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * setEngineModel that gets overriden from the Engine interface
+   * setEngineModel that gets override from the Engine interface.
    *
-   * @param engineModel
+   * @param engineModel sets the engine model.
    */
   @Override
   public void setEngineModel(String engineModel) {
@@ -111,9 +111,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * setDriveTrain that gets overriden from the Engine interface
+   * setDriveTrain that gets override from the Engine interface.
    *
-   * @param driveTrain
+   * @param driveTrain sets the Drive train.
    */
   @Override
   public void setDriveTrain(String driveTrain) {
@@ -121,9 +121,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * setEngineType that sets overriden from the Engine interface
+   * setEngineType that sets override from the Engine interface.
    *
-   * @param fuel
+   * @param fuel sets the engine type.
    */
   @Override
   public void setEngineType(String fuel) {
@@ -131,9 +131,9 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * toString method that prints to the console
+   * toString method that prints to the console.
    *
-   * @return String with the values from the instance variable
+   * @return String with the values from the instance variable.
    */
   public String toString() {
     return "Engine Manufactured : " + this.engineManufacturer + "\n" + "Engine Manufactured : "
@@ -143,13 +143,12 @@ public class ManufacturedEngine implements Engine {
   }
 
   /**
-   * Main method to test two scenarios
+   * Main method to test two scenarios.
    */
   public static void main(String[] args) {
     ManufacturedEngine scenarioOne = new ManufacturedEngine();
     System.out.println(scenarioOne);
 
-    //Print out Date?
     ManufacturedEngine scenarioTwo = new ManufacturedEngine("Honda", new Date(1325599999999L),
         "H-Series", "H23A1", "2WD: Two-Wheel Drive", 4, "88 AKI");
     System.out.println(scenarioTwo);

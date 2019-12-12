@@ -1,5 +1,5 @@
 /**
- * Class interiorFeature that implements feature
+ * Class interiorFeature that implements feature.
  *
  * @author Michael Gough
  * @version 1
@@ -8,57 +8,57 @@
 public class InteriorFeature implements Feature {
 
   /**
-   * Initialize instance variables for the InteriorFeature class
+   * Initialize instance variables for the InteriorFeature class.
    */
   private String interiorFeature;
 
   /**
-   * Default constructor that sets the interiorFeature instance variable to Generic
+   * Default constructor that sets the interiorFeature instance variable to Generic.
    */
   InteriorFeature() {
     this.interiorFeature = "Generic";
   }
 
   /**
-   * Overloaded constructor the instance variable to the parameter String value
+   * Overloaded constructor the instance variable to the parameter String value.
    *
-   * @param interiorFeature
+   * @param interiorFeature String value for interior feature.
    */
   InteriorFeature(String interiorFeature) {
     this.interiorFeature = interiorFeature;
   }
 
   /**
-   * Method getFeature that gets the feature
+   * Method getFeature that gets the feature.
    *
-   * @return String value of the feature
+   * @return String value of the feature.
    */
   public String getFeature() {
     return this.interiorFeature;
   }
 
   /**
-   * setFeature method that sets the instance variable of interiorFeature
+   * setFeature method that sets the instance variable of interiorFeature.
    *
-   * @param interiorFeature
+   * @param interiorFeature sets the feature for interior Feature.
    */
   public void setFeature(String interiorFeature) {
     this.interiorFeature = interiorFeature;
   }
 
   /**
-   * toString method that returns the instance variable
+   * toString method that returns the instance variable.
    *
-   * @return String value of instance Variable
+   * @return String value of instance Variable.
    */
   public String toString() {
     return "Interior [" + this.interiorFeature + "]";
   }
 
   /**
-   * Static main method that test two scenarios
+   * Static main method that test two scenarios.
    *
-   * @param args
+   * @param args calls the main args to test constructors
    */
   public static void main(String[] args) {
 

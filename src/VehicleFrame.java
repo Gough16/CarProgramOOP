@@ -1,5 +1,5 @@
 /**
- * Creates a concrete class name VehicleFrame that implements the interface Chassis
+ * Creates a concrete class name VehicleFrame that implements the interface Chassis.
  *
  * @author Michael Gough
  * @version 1
@@ -8,28 +8,28 @@
 public class VehicleFrame implements Chassis {
 
   /**
-   * Declare a String named vehicleFrameType
+   * Declare a String named vehicleFrameType.
    */
   private String vehicleFrameType = " ";
 
   /**
-   * Default constructor that sets the instance variable to "Unibody"
+   * Default constructor that sets the instance variable to "Unibody".
    */
   public VehicleFrame() {
     this.vehicleFrameType = "Unibody";
   }
 
   /**
-   * Overloaded constructor that sets the instance variable
+   * Overloaded constructor that sets the instance variable.
    *
-   * @param vehicleFrameType
+   * @param vehicleFrameType string for vehicle Frame.
    */
   public VehicleFrame(String vehicleFrameType) {
     this.vehicleFrameType = vehicleFrameType;
   }
 
   /**
-   * Overriden method getChassisType
+   * Override method getChassisType.
    *
    * @return Chassis
    */
@@ -39,9 +39,9 @@ public class VehicleFrame implements Chassis {
   }
 
   /**
-   * Override method setChassisValue that sets the instance variable chassisName
+   * Override method setChassisValue that sets the instance variable chassisName.
    *
-   * @param vehicleFrameType
+   * @param vehicleFrameType sets the chassis type
    */
   @Override
   public void setChassisType(String vehicleFrameType) {
@@ -50,7 +50,7 @@ public class VehicleFrame implements Chassis {
   }
 
   /**
-   * toString that prints a String with chassis, vehicleFrameType
+   * toString that prints a String with chassis, vehicleFrameType.
    *
    * @return String value
    */
@@ -59,9 +59,9 @@ public class VehicleFrame implements Chassis {
   }
 
   /**
-   * static method that test two scenarios
+   * static method that test two scenarios.
    *
-   * @param args
+   * @param args test the constructor objects.
    */
   public static void main(String[] args) {
     //Creates an object for the default constructor

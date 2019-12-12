@@ -1,5 +1,5 @@
 /**
- * Concrete class VehicleChassis that implements Chassis
+ * Concrete class VehicleChassis that implements Chassis.
  *
  * @author Michael Gough
  * @version 1
@@ -8,12 +8,12 @@
 public class VehicleChassis implements Chassis {
 
   /**
-   * Declaring private String chassisName
+   * Declaring private String chassisName.
    */
   private String chassisName;
 
   /**
-   * Default constructor for VehicleChassis class that setting the instance variable
+   * Default constructor for VehicleChassis class that setting the instance variable.
    */
   public VehicleChassis() {
     //Setting instance variable ChassisName = Chassis
@@ -21,9 +21,9 @@ public class VehicleChassis implements Chassis {
   }
 
   /**
-   * Overloaded constructor for VehicleChassis class that sets the ChassisName instance variable
+   * Overloaded constructor for VehicleChassis class that sets the ChassisName instance variable.
    *
-   * @param chassisName
+   * @param chassisName string that sets the instance variable.
    */
   public VehicleChassis(String chassisName) {
     //Setting instance variable chassisName equal to itself
@@ -32,9 +32,9 @@ public class VehicleChassis implements Chassis {
 
 
   /**
-   * Override method getChassisType
+   * Override method getChassisType.
    *
-   * @return an instance of the interface Chassis
+   * @return an instance of the interface Chassis.
    */
   @Override
   public Chassis getChassisType() {
@@ -42,9 +42,9 @@ public class VehicleChassis implements Chassis {
   }
 
   /**
-   * Override method setChassisType that sets the instance variable chassisName
+   * Override method setChassisType that sets the instance variable chassisName.
    *
-   * @param vehicleChassis
+   * @param vehicleChassis sets the chassis type.
    */
   @Override
   public void setChassisType(String vehicleChassis) {
@@ -53,18 +53,18 @@ public class VehicleChassis implements Chassis {
   }
 
   /**
-   * toString that returns a string with the instance variable chassisName
+   * toString that returns a string with the instance variable chassisName.
    *
-   * @return String with the String of chassisName and the variable
+   * @return String with the String of chassisName and the variable.
    */
   public String toString() {
     return "Chassis Name : " + chassisName;
   }
 
   /**
-   * Static method main that creates two objects for the default and overloaded constructor
+   * Static method main that creates two objects for the default and overloaded constructor.
    *
-   * @param args
+   * @param args implements the args to test the constructor
    */
   public static void main(String[] args) {
     //Creates an object for the default constructor
