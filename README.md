@@ -49,6 +49,8 @@ Michael Gough
 ## Acknowledgments
 
 * Professor Scott Vanselow
+* GeeksforGeeks -> constructors in Java 
+Stack Overflow -> overloading methods 
 
 ## History
 
